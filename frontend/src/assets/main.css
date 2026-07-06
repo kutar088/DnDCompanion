@@ -1,0 +1,84 @@
+:root {
+  --dnd-red: #c8102e;
+  --dnd-red-dark: #8a0b20;
+  --dnd-gold: #d4af37;
+  --dnd-parchment: #ede0c8;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, rgba(200, 30, 30, 0.10), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(60, 40, 90, 0.10), transparent 60%),
+    #1a1a1a;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dnd-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: 0.02em;
+}
+
+.hero-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url('https://images.unsplash.com/photo-1614332287897-cdc485fa562d?w=1600&auto=format')
+    center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+
+.character-card {
+  border-left: 4px solid var(--dnd-red);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat-badge {
+  font-family: 'Courier New', monospace;
+  padding: 0.4em 0.5em;
+}
+
+.navbar-brand i {
+  font-size: 1.4rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--dnd-red);
+  border-color: var(--dnd-red);
+  color: white;
+}
+
+.nav-tabs .nav-link {
+  color: #adb5bd;
+}
+
+.avatar-sm {
+  background: #fff;
+  object-fit: cover;
+}
+
+.btn-dnd {
+  background-color: var(--dnd-red);
+  border-color: var(--dnd-red);
+  color: white;
+}
+
+.btn-dnd:hover {
+  background-color: var(--dnd-red-dark);
+  border-color: var(--dnd-red-dark);
+  color: white;
+}
